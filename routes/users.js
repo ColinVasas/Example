@@ -4,7 +4,7 @@ var router = express.Router();
 router.get('/', async (req, res, next) => {
   let arg = req.body.zip;
   console.log(arg);
-  const monster = await getMonster(arg);
+  const monster = await getMonster(97303);
   console.log(monster);
 
   res.render('monsters', monster);
@@ -12,7 +12,7 @@ router.get('/', async (req, res, next) => {
 
 router.get("/:name", async (req, res, next) => {
   let arg = req.body.zip;
-  const monGroup = await getMonster(arg);
+  const monGroup = await getMonster(97303);
   console.log(monGroup);
 
   const monsterName = req.params;

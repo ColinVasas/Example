@@ -13,7 +13,7 @@ var router = express.Router();
  });
 
  router.post('/', async (req, res) => {
-  let arg = 97303;
+  let arg = req.body.zip;
   console.log(req.body.zip);
   //req.session.zipCode = arg;
   const monster = await getMonster(arg);

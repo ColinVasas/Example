@@ -13,13 +13,16 @@
         <li>
           <a href="/monsters/Acid Ant/">Acid Ant</a>
         </li>
-        <form method="GET">
+        <form method="POST">
           <label for="zip">zip:</label>
   
-          <input type="text" id="zip" value="97303" />
+          <input type="text" name="zip" value="97303" />
   
-          <button class="btn btn-primary" id="searchBtn">Search</button>
+          <button class="btn btn-primary" type="submit">Search</button>
         </form>
+
+        <h2>List of Monsters</h2>
+        <p><%- distance %></p>
     </ul>
   </body>
 </html>
